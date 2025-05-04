@@ -1,15 +1,34 @@
 @import "tailwindcss";
-
-@theme {
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+@plugin "../hero.ts";
+@source "../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}";
+@custom-variant dark (&:is(.dark *));
+@font-face {
+  font-family: 'Geist';
+  src: url('./fonts/otf/Geist-Regular.otf') format('opentype'), url('./fonts/ttf/Geist-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist Bold';
+  src: url('./fonts/otf/Geist-Bold.otf') format('opentype'), url('./fonts/ttf/Geist-Bold.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist ExtraBold';
+  src: url('./fonts/otf/Geist-ExtraBold.otf') format('opentype'), url('./fonts/ttf/Geist-ExtraBold.ttf') format('truetype');
+  font-style: normal;
 }
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
-
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
+@theme {
+  --font-sans: "Geist", Arial, Helvetica, sans-serif;
+}
+@layer base {
+  body {
+    background: #ffffff;
+    color: #2f2f2f;
+    @variant dark {
+      background: #1A1A1A;
+      color: #fafafa;
+    }
   }
 }
