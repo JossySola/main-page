@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Jossy Sola" },
+    { title: "Jossy Solá" },
     { name: "description", content: "Jossy Sola's homepage" },
   ];
 }

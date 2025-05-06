@@ -14,6 +14,7 @@
     "@react-router/serve": "^7.5.3",
     "@sendgrid/mail": "^8.1.5",
     "@tailwindcss/vite": "^4.1.5",
+    "@vercel/blob": "^1.0.1",
     "@vitejs/plugin-react": "^4.4.1",
     "dotenv": "^16.5.0",
     "framer-motion": "^12.9.4",
