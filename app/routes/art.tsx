@@ -43,5 +43,6 @@ export async function loader ({ params }: Route.LoaderArgs): Promise<Blobs | []>
 export default function Art ({
   loaderData
 }: Route.ComponentProps) {
+  console.log(loaderData)
     return <Gallery blobs={ loaderData ?? [] } />
 }

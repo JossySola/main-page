@@ -74,7 +74,7 @@ export default function Gallery ({ blobs }: {
             }}
             size="lg"
             initialPage={1} 
-            total={ blobs && blobs.length }
+            total={ blobs && blobs.length - 1 }
             page={ currentPage } 
             onChange={ setCurrentPage } />
 
