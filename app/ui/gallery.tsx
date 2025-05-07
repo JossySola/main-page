@@ -10,7 +10,6 @@ export default function Gallery ({ blobs }: {
 }) {
     const [ currentPage, setCurrentPage ] = useState(1);
     const navigate = useNavigate();
-    console.log(blobs)
 
     const metadata = [
         {
@@ -26,7 +25,7 @@ export default function Gallery ({ blobs }: {
             alt: "Sculpt in clay of a fictional character. It has no eyes, no nose, and no mouth. The teeth and gums are exposed and there is a line dividing half of the face. The space where the nose and eyes would be placed up to the top is filled with concave and irregular outlines representing tissue and veins. In the cheekbones are two concave triangles on each side. The neck has carved details giving illusion of tendons. It has a small ears and the figure is chest to head."
         },
         {
-            caption: "Inspired by the Harry Potter Weasley's house.",
+            caption: "Inspired by the Harry Potter Weasley's house",
             alt: "Sculpt in clay of a castle with irregular and asymmetrical parts and gable roofs. The castle sits on top of a base shaped like a sea wave. The roofs have a brick orangy color whereas the rest of the castle has a light beige color. The base has a carved texture giving the illusion of the water movement, and it is painted in a Steel Blue color."
         },
         {
@@ -74,7 +73,7 @@ export default function Gallery ({ blobs }: {
             color="default" 
             size="lg" 
             variant="flat"
-            onPress={ () => setCurrentPage(prev => (prev > 1 ? prev - 1 : prev))}>
+            onPress={ () => setCurrentPage(prev => (prev > 1 ? prev - 1 : prev)) }>
                 <svg 
                 aria-hidden="true" 
                 fill="none" 
@@ -112,7 +111,7 @@ export default function Gallery ({ blobs }: {
             color="default" 
             size="lg" 
             variant="flat"
-            onPress={ () => setCurrentPage((prev) => (prev < 10 ? prev + 1 : prev))}>
+            onPress={ () => setCurrentPage((prev) => (prev < (blobs && blobs.length - 1) ? prev + 1 : prev))}>
                 <svg 
                 aria-hidden="true" 
                 fill="none" 
