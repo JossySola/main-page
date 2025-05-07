@@ -3,7 +3,6 @@ import { Button, Card, CardFooter, Image, Pagination } from "@heroui/react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { ArrowCircleLeft } from "./icons/vercel";
-import { motion } from "framer-motion";
 import type { Blobs } from "~/routes/art";
 
 export default function Gallery ({ blobs }: {
@@ -52,18 +51,12 @@ export default function Gallery ({ blobs }: {
         
         {
             blobs && blobs[currentPage] ?
-            
                 <Card isFooterBlurred className="border-none" radius="lg">
-                    <motion.div
-                    initial={{ opacity: 0 }} 
-                    whileInView={{ opacity: 1 }} 
-                    transition={{ delay: 0.3 }}>
-                        <Image 
-                        alt={ metadata[currentPage - 1].alt ?? "" }
-                        width={350}
-                        src={ blobs[currentPage].url ?? "" }
-                        />
-                    </motion.div>
+                    <Image 
+                    alt={ metadata[currentPage - 1].alt ?? "" }
+                    width={350}
+                    src={ blobs[currentPage].url ?? "" }
+                    />
                     <CardFooter className="justify-center before:bg-white/10 h-fit border-white/20 border-1 overflow-hidden py-3 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
                         <p className="text-tiny text-white/80">{ metadata[currentPage - 1].caption ?? "" }</p>
                     </CardFooter>
