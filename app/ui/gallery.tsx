@@ -29,7 +29,7 @@ export default function Gallery ({ blobs }: {
                 <Image 
                 alt=""
                 width={350}
-                src={ blobs[currentPage - 1].pathname ?? "" }
+                src={ blobs[currentPage - 1].url ?? "" }
                 />
                 <CardFooter className="justify-center before:bg-white/10 h-fit border-white/20 border-1 overflow-hidden py-3 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
                     <p className="text-tiny text-white/80">Caption</p>
