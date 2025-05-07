@@ -18,6 +18,7 @@ export default function Contact ({
 }: Route.ComponentProps) {
   const navigate = useNavigate();
   return <section className="w-full h-screen flex flex-col items-center justify-center gap-3">
+    <header className="w-full flex flex-col md:flex-row justify-center items-center">
       <Button 
       isIconOnly 
       aria-label="Go back button" 
@@ -25,9 +26,9 @@ export default function Contact ({
       onPress={() => navigate(-1) }>
         <ArrowCircleLeft />
       </Button>
-      
       <h1 style={{ fontFamily: "Geist Bold" }} className="text-center text-3xl m-5">Contact 💌</h1>
-      <ContactForm />
+    </header>
+    <ContactForm />
   </section>
 }
 
