@@ -32,7 +32,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Meta />
         <Links />
       </head>
-      <body className="antialiased w-full h-screen">
+      <body className="antialiased w-full h-full">
         <ClientSideProvider>
           { children }
         </ClientSideProvider>
