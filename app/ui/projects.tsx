@@ -97,6 +97,13 @@ export default function Projects () {
             <div className="flex flex-col">
               <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2">Jammming <Link to="https://jossysola.github.io/jammming/" className="text-primary" target="_blank"><External /></Link></h3>
               <p>This is part of the Codecademy Front-End project which uses Spotify API. The users are able to search for songs/artists, add songs to a new playlist and save it in their Spotify account.</p>
+              
+                <Tooltip content="JavaScript Vanilla" showArrow={true}>
+                  <Avatar size="md" src="JavaScript-logo.png" classNames={{
+                    img: "object-scale-down",
+                    base: "object-scale-down mt-5",
+                  }} />
+                </Tooltip>
             </div>
           </CardBody>
         </Card>
