@@ -20,10 +20,10 @@ export function External () {
     return (
         <svg 
         data-testid="geist-icon" 
-        height="16" 
+        height="25" 
         strokeLinejoin="round" 
         viewBox="0 0 16 16" 
-        width="16" 
+        width="25" 
         style={{ color: "currentcolor" }}>
             <path 
             fillRule="evenodd" 
