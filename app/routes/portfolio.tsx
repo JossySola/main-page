@@ -6,6 +6,8 @@ import Interests from "~/ui/interests";
 import Certifications from "~/ui/certifications";
 import { ArrowCircleLeft } from "~/ui/icons/vercel";
 import { useNavigate } from "react-router";
+import SoftSkills from "~/ui/soft-skills";
+import WorkingOn from "~/ui/working-on";
 
 export function meta({}: Route.MetaArgs) {
     return [
@@ -44,9 +46,11 @@ export default function Portfolio () {
         <Projects />
       </section>
 
-      <section className="w-full m-5 flex flex-col md:flex-row justify-center items-center gap-5">
+      <section className="w-full m-5 flex flex-col md:flex-row md:flex-wrap justify-center items-center sm:items-start gap-5">
         <Interests />
         <Certifications />
+        <SoftSkills />
+        <WorkingOn />
       </section>
     </section>
   )
