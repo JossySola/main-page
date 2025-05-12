@@ -9,11 +9,26 @@ export default function Projects () {
           base: "w-full h-fit bg-default-100 p-5"
         }}>
           <CardBody className="flex sm:flex-row flex-col justify-center sm:justify-left items-center gap-5">
-            <Image src="scheduler.png" alt="Scheduler project logo" className="bg-white object-contain p-3" width={250} height={105} />
+            <div>
+              <Image src="scheduler.png" alt="Scheduler project logo" className="bg-white object-contain p-3" width={250} height={105}
+              classNames={{
+                wrapper: "w-[250px]"
+              }} />
+            </div>
+            
             <div className="flex flex-col">
-              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2">Scheduler <Link to="https://scheduler.jossysola.com/" className="text-primary" target="_blank"><External /></Link></h3>
+              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide">
+                Scheduler 
+                <Link to="https://scheduler.jossysola.com/" className="text-primary" target="_blank">
+                  <External />
+                </Link>
+                <Link to="https://github.com/JossySola/scheduler" target="_blank">
+                  <img width={25} height={25} className="dark:relative h-[25px] object-contain" src="github-mark-white.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
+                  <img width={25} height={25} className="dark:hidden h-[25px] object-contain" src="github-mark.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
+                </Link>
+              </h3>
               <p>This web application aims to provide a way to make schedules with the option of setting specifications for each row and column. With the specifications set, the user can utilize the AI feature to automatically complete the schedule based on the criteria.</p>
-              <AvatarGroup max={7} className="m-5">
+              <AvatarGroup max={8} className="m-5">
                 <Tooltip content="Next JS" showArrow={true}>
                   <Avatar size="md" src="nextjs.png" />
                 </Tooltip>
@@ -44,6 +59,9 @@ export default function Projects () {
                 <Tooltip content="Framer" showArrow={true}>
                   <Avatar size="md" src="framer.png" />
                 </Tooltip>
+                <Tooltip content="Zod" showArrow={true}>
+                  <Avatar size="md" src="https://raw.githubusercontent.com/colinhacks/zod/main/logo.svg" />
+                </Tooltip>
               </AvatarGroup>
             </div>
           </CardBody>
@@ -52,9 +70,23 @@ export default function Projects () {
           base: "w-full h-fit bg-default-100 p-5"
         }}>
           <CardBody className="flex sm:flex-row flex-col justify-center sm:justify-left items-center gap-5">
-            <Image src="century.png" alt="21st Century Times project logo" className="bg-white object-contain p-3" width={250} height={105} />
+            <div>
+              <Image src="century.png" alt="21st Century Times project logo" className="bg-white object-contain p-3" width={250} height={105} 
+              classNames={{
+                wrapper: "w-[250px]"
+              }}/>
+            </div>
+            
             <div className="flex flex-col">
-              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2">The 21st Century Times <Link to="https://www.centurytimes.jossysola.com/" className="text-primary" target="_blank"><External /></Link></h3>
+              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide">The 21st Century Times 
+                <Link to="https://www.centurytimes.jossysola.com/" className="text-primary" target="_blank">
+                  <External />
+                </Link>
+                <Link to="https://github.com/JossySola/century" target="_blank">
+                  <img width={25} height={25} className="dark:relative h-[25px] object-contain" src="github-mark-white.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
+                  <img width={25} height={25} className="dark:hidden h-[25px] object-contain" src="github-mark.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
+                </Link>
+              </h3>
               <p>This is part of the Codecademy Front-End project which uses the Reddit API. The user can search for specific Subreddits, choose a topic from the navigation menu, open, like, and comment any post by authenticating on Reddit.</p>
               <AvatarGroup max={6} className="m-5">
                 <Tooltip content="Vercel" showArrow={true}>
@@ -93,9 +125,23 @@ export default function Projects () {
           base: "w-full h-fit bg-default-100 p-5"
         }}>
           <CardBody className="flex sm:flex-row flex-col justify-center sm:justify-left items-center gap-5">
-            <Image src="jammming.png" alt="Jammming project logo" className="bg-white object-contain p-3" width={250} height={105} />
+            <div>
+              <Image src="jammming.png" alt="Jammming project logo" className="bg-white object-contain p-3" width={250} height={105} 
+              classNames={{
+                wrapper: "w-[250px]"
+              }}/>
+            </div>
+            
             <div className="flex flex-col">
-              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2">Jammming <Link to="https://jossysola.github.io/jammming/" className="text-primary" target="_blank"><External /></Link></h3>
+              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide">Jammming 
+                <Link to="https://jossysola.github.io/jammming/" className="text-primary" target="_blank">
+                  <External />
+                </Link>
+                <Link to="https://github.com/JossySola/jammming" target="_blank">
+                  <img width={25} height={25} className="dark:relative h-[25px] object-contain" src="github-mark-white.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
+                  <img width={25} height={25} className="dark:hidden h-[25px] object-contain" src="github-mark.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
+                </Link>
+              </h3>
               <p>This is part of the Codecademy Front-End project which uses Spotify API. The users are able to search for songs/artists, add songs to a new playlist and save it in their Spotify account.</p>
                 <AvatarGroup max={6} className="m-5">
                   <Tooltip content="JavaScript Vanilla" showArrow={true}>
@@ -111,7 +157,6 @@ export default function Projects () {
                     }} />
                   </Tooltip>
                 </AvatarGroup>
-                
             </div>
           </CardBody>
         </Card>
