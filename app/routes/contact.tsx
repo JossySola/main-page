@@ -1,4 +1,3 @@
-import ContactForm from "~/ui/contact-form";
 import type { Route } from "./+types/contact";
 import sgMail from "@sendgrid/mail";
 import { z } from "zod";
