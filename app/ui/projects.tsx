@@ -17,7 +17,7 @@ export default function Projects () {
             </div>
             
             <div className="flex flex-col">
-              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide">
+              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide mb-3">
                 Scheduler 
                 <Link to="https://scheduler.jossysola.com/" className="text-primary" target="_blank">
                   <External />
@@ -78,7 +78,7 @@ export default function Projects () {
             </div>
             
             <div className="flex flex-col">
-              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide">The 21st Century Times 
+              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide mb-3">The 21st Century Times 
                 <Link to="https://www.centurytimes.jossysola.com/" className="text-primary" target="_blank">
                   <External />
                 </Link>
@@ -133,7 +133,7 @@ export default function Projects () {
             </div>
             
             <div className="flex flex-col">
-              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide">Jammming 
+              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide mb-3">Jammming 
                 <Link to="https://jossysola.github.io/jammming/" className="text-primary" target="_blank">
                   <External />
                 </Link>
