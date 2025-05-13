@@ -4,7 +4,7 @@ import sgMail from "@sendgrid/mail";
 import { z } from "zod";
 import { ArrowCircleLeft } from "~/ui/icons/vercel";
 import { Button } from "@heroui/react";
-import { useNavigate } from "react-router";
+import { Link, useNavigate } from "react-router";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -28,7 +28,29 @@ export default function Contact ({
       </Button>
       <h1 style={{ fontFamily: "Geist Bold" }} className="text-center text-3xl m-5">Contact 💌</h1>
     </header>
-    <ContactForm />
+    
+    <h2>Want to reach out?</h2>
+      
+    <h2 className="flex flex-row gap-2 items-center">Message me on 
+      <Link to="https://www.linkedin.com/in/jossysola/" target="_blank">
+        <img alt="LinkedIn" aria-label="LinkedIn link" src="linkedin.png" width={32} height={32} />
+      </Link>,
+    </h2> 
+    <h2 className="flex flex-row gap-2 items-center">Check my projects on 
+      <Link to="https://github.com/JossySola" target="_blank">
+        <img alt="GitHub" aria-label="GitHub link" src="github-mark-white.png" className="hidden dark:inline" width={32} height={32} />
+      </Link>
+      <Link to="https://github.com/JossySola" target="_blank">
+        <img alt="GitHub" aria-label="GitHub link" src="github-mark.png" className="inline dark:hidden" width={32} height={32} />
+      </Link>
+      ,
+    </h2> 
+    <h2 className="flex flex-row gap-2 items-center">or DM me on 
+      <Link to="https://www.instagram.com/jossysolart/" target="_blank">
+        <img alt="Instagram" aria-label="Instagram Link" src="instagram.webp" width={32} height={32} />
+      </Link>
+      !
+    </h2>
   </section>
 }
 
@@ -39,6 +61,8 @@ export async function action ({
   const name = formData.get("name");
   const email = formData.get("email");
   const message = formData.get("message");
+  const captcha = formData.get("g-recaptcha-response");
+  console.log(captcha)
 
   const nameValidation = z.string().safeParse(name);
   const emailValidation = z.string().email().safeParse(email);
