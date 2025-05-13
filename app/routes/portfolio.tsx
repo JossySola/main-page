@@ -29,6 +29,7 @@ export default function Portfolio () {
           <ArrowCircleLeft />
         </Button>
         <h1 style={{ fontFamily: "Geist Bold" }} className="text-3xl">José María Solá</h1>
+        <p className="text-gray-400">Fullstack web development</p>
       </header>
       
       <section className="w-full m-5 flex flex-col md:flex-row justify-center items-center gap-5">   
