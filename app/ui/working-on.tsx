@@ -9,9 +9,13 @@ export default function WorkingOn () {
             <h2 style={{ fontFamily: "Geist Bold" }} className="text-xl">Working on...</h2>
             <div className="flex flex-row gap-3 items-center">
               <Spinner classNames={{label: "text-foreground mt-4"}} variant="simple" />
-              <p>Scheduler <Code>v1.0.0-alpha.2</Code></p>
+              <p>Scheduler <Code>v1.0.0-alpha.3</Code></p>
             </div>
             <h2 style={{ fontFamily: "Geist Bold" }} className="text-xl">Up next...</h2>
+            <div className="flex flex-row gap-3 items-center">
+              <Spinner classNames={{label: "text-foreground mt-4"}} variant="simple" color="default" />
+              <p>Fitting Room tracker <Code>dev</Code></p>
+            </div>
             <div className="flex flex-row gap-3 items-center">
               <Spinner classNames={{label: "text-foreground mt-4"}} variant="simple" color="default" />
               <p>21st Century Times <Code>v2.0.0</Code></p>
