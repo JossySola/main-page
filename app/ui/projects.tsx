@@ -60,7 +60,10 @@ export default function Projects () {
                   <Avatar size="md" src="framer.png" />
                 </Tooltip>
                 <Tooltip content="Zod" showArrow={true}>
-                  <Avatar size="md" src="https://raw.githubusercontent.com/colinhacks/zod/main/logo.svg" />
+                  <Avatar size="md" src="https://raw.githubusercontent.com/colinhacks/zod/main/logo.svg" classNames={{
+                    img: "object-contain p-1",
+                    base: "object-contain p-1",
+                  }}/>
                 </Tooltip>
               </AvatarGroup>
             </div>
