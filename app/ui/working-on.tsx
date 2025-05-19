@@ -27,8 +27,16 @@ export default function WorkingOn () {
             <h2 style={{ fontFamily: "Geist Bold" }} className="text-xl">Currently learning...</h2>
             <div className="flex flex-row gap-3 items-center">
               <Spinner classNames={{label: "text-foreground mt-4"}} variant="simple" color="warning" size="sm" />
-              <img src="nextjs-logotype-light-background.svg" className="inline dark:hidden" width={100} />
-              <img src="nextjs-logotype-dark-background.svg" className="hidden dark:inline" width={100} />
+              <img alt="Python logo" aria-label="Python logo" src="python-logo-generic.svg" className="inline" width={100} />
+            </div>
+            <div className="flex flex-row gap-3 items-center">
+              <Spinner classNames={{label: "text-foreground mt-4"}} variant="simple" color="warning" size="sm" />
+              <img alt="Django logo" aria-label="Django logo" src="django-logo-negative.svg" className="inline" width={80} />
+            </div>
+            <div className="flex flex-row gap-3 items-center">
+              <Spinner classNames={{label: "text-foreground mt-4"}} variant="simple" color="warning" size="sm" />
+              <img alt="Next JS logo" aria-label="Next JS logo" src="nextjs-logotype-light-background.svg" className="inline dark:hidden" width={100} />
+              <img alt="Next JS logo" aria-label="Next JS logo" src="nextjs-logotype-dark-background.svg" className="hidden dark:inline" width={100} />
             </div>
           </CardBody>
         </Card>
