@@ -1,4 +1,4 @@
-import { Avatar, AvatarGroup, Card, CardBody, Image, Tooltip } from "@heroui/react";
+import { Avatar, AvatarGroup, Card, CardBody, Code, Image, Tooltip } from "@heroui/react";
 import { External } from "./icons/vercel";
 import { Link } from "react-router";
 
@@ -16,9 +16,12 @@ export default function Projects () {
               }} />
             </div>
             
-            <div className="flex flex-col">
-              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide mb-3">
-                Scheduler 
+            <div className="flex flex-col gap-3">
+              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide">
+                Scheduler
+                <Code>v1.0.0-alpha.3</Code>
+              </h3>
+              <div className="flex flex-row gap-3 items-center">
                 <Link to="https://scheduler.jossysola.com/" className="text-primary" target="_blank">
                   <External />
                 </Link>
@@ -26,9 +29,9 @@ export default function Projects () {
                   <img width={25} height={25} className="dark:relative h-[25px] object-contain" src="github-mark-white.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
                   <img width={25} height={25} className="dark:hidden h-[25px] object-contain" src="github-mark.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
                 </Link>
-              </h3>
+              </div>
               <p>This web application aims to provide a way to make schedules with the option of setting specifications for each row and column. With the specifications set, the user can utilize the AI feature to automatically complete the schedule based on the criteria.</p>
-              <AvatarGroup max={8} className="m-5">
+              <AvatarGroup max={8}>
                 <Tooltip content="Next JS" showArrow={true}>
                   <Avatar size="md" src="nextjs.png" />
                 </Tooltip>
@@ -80,8 +83,12 @@ export default function Projects () {
               }}/>
             </div>
             
-            <div className="flex flex-col">
-              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide mb-3">The 21st Century Times 
+            <div className="flex flex-col gap-3">
+              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide">
+                The 21st Century Times 
+                <Code>v1.0.2</Code>
+              </h3>
+              <div className="flex flex-row items-center gap-3">
                 <Link to="https://www.centurytimes.jossysola.com/" className="text-primary" target="_blank">
                   <External />
                 </Link>
@@ -89,9 +96,9 @@ export default function Projects () {
                   <img width={25} height={25} className="dark:relative h-[25px] object-contain" src="github-mark-white.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
                   <img width={25} height={25} className="dark:hidden h-[25px] object-contain" src="github-mark.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
                 </Link>
-              </h3>
+              </div>
               <p>This is part of the Codecademy Front-End project which uses the Reddit API. The user can search for specific Subreddits, choose a topic from the navigation menu, open, like, and comment any post by authenticating on Reddit.</p>
-              <AvatarGroup max={6} className="m-5">
+              <AvatarGroup max={6}>
                 <Tooltip content="Vercel" showArrow={true}>
                   <Avatar size="md" src="vercel.png" classNames={{
                     img: "object-scale-down p-1",
@@ -135,8 +142,12 @@ export default function Projects () {
               }}/>
             </div>
             
-            <div className="flex flex-col">
-              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide mb-3">Jammming 
+            <div className="flex flex-col gap-3">
+              <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide">
+                Jammming 
+                <Code>v1.2.1</Code>
+              </h3>
+              <div className="flex flex-row items-center gap-3">
                 <Link to="https://jossysola.github.io/jammming/" className="text-primary" target="_blank">
                   <External />
                 </Link>
@@ -144,9 +155,9 @@ export default function Projects () {
                   <img width={25} height={25} className="dark:relative h-[25px] object-contain" src="github-mark-white.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
                   <img width={25} height={25} className="dark:hidden h-[25px] object-contain" src="github-mark.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
                 </Link>
-              </h3>
+              </div>
               <p>This is part of the Codecademy Front-End project which uses Spotify API. The users are able to search for songs/artists, add songs to a new playlist and save it in their Spotify account.</p>
-                <AvatarGroup max={6} className="m-5">
+                <AvatarGroup max={6}>
                   <Tooltip content="JavaScript Vanilla" showArrow={true}>
                   <Avatar size="md" src="JavaScript-logo.png" classNames={{
                     img: "object-scale-down",
