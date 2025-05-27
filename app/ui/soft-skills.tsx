@@ -13,6 +13,7 @@ export default function SoftSkills () {
               <Chip>✨ Creativity</Chip>
               <Chip>🧠 Problem Solving</Chip>
               <Chip>🗣️ Effective Communication</Chip>
+              <Chip>🔎 Attention to Detail</Chip>
             </div>
           </CardBody>
         </Card>
