@@ -19,7 +19,7 @@ export default function Projects () {
             <div className="flex flex-col gap-3">
               <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide">
                 Scheduler
-                <Code>v1.0.0</Code>
+                <Code>v1.0.1</Code>
               </h3>
               <div className="flex flex-row gap-3 items-center">
                 <Link to="https://scheduler.jossysola.com/" className="text-primary" target="_blank">
@@ -86,7 +86,7 @@ export default function Projects () {
             <div className="flex flex-col gap-3">
               <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide">
                 The 21st Century Times 
-                <Code>v1.0.2</Code>
+                <Code>v2.0.0</Code>
               </h3>
               <div className="flex flex-row items-center gap-3">
                 <Link to="https://www.centurytimes.jossysola.com/" className="text-primary" target="_blank">
