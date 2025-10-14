@@ -9,7 +9,7 @@ export default function WorkingOn () {
             <h2 style={{ fontFamily: "Geist Bold" }} className="text-xl">Working on...</h2>
             <div className="flex flex-row gap-3 items-center">
               <Spinner classNames={{label: "text-foreground mt-4"}} variant="simple" />
-              <p>21st Century Times <Code>v2.1.0</Code></p>
+              <p>The 21st Century Times <Code>v2.1.0</Code></p>
             </div>
             
             <h2 style={{ fontFamily: "Geist Bold" }} className="text-xl">Up next...</h2>
