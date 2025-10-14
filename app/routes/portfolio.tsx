@@ -32,7 +32,7 @@ export default function Portfolio () {
         <p className="text-gray-400">Fullstack web developer</p>
       </header>
       
-      <section className="w-full m-5 flex flex-col md:flex-row justify-center items-center gap-5">   
+      <section className="w-full m-5 flex flex-col justify-center items-center gap-5">   
         <SocialMedia />
           <p className="text-center">
               Junior Full Stack Developer with hands-on experience building web applications. Skilled in integrating APIs and creating applications having accessibility, interactivity and best practices in mind.

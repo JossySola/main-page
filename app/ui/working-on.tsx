@@ -22,11 +22,11 @@ export default function WorkingOn () {
             <h2 style={{ fontFamily: "Geist Bold" }} className="text-xl">Currently learning...</h2>
             <div className="flex flex-row gap-3 items-center">
               <Spinner classNames={{label: "text-foreground mt-4"}} variant="simple" color="warning" size="sm" />
-              <img alt="Python logo" aria-label="Python logo" src="python-logo-generic.svg" className="inline" width={100} />
+              <img alt="C Sharp logo" aria-label="C Sharp logo" src="logo_csharp.png" className="inline" width={48}/>
             </div>
             <div className="flex flex-row gap-3 items-center">
               <Spinner classNames={{label: "text-foreground mt-4"}} variant="simple" color="warning" size="sm" />
-              <img alt="Django logo" aria-label="Django logo" src="django-logo-negative.svg" className="inline" width={80} />
+              <span className="font-['Segoe UI', SegoeUI, 'Helvetica Neue'] font-semibold text-lg ">.NET</span>
             </div>
           </CardBody>
         </Card>
