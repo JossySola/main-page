@@ -34,6 +34,9 @@ export default function Portfolio () {
       
       <section className="w-full m-5 flex flex-col md:flex-row justify-center items-center gap-5">   
         <SocialMedia />
+          <p>
+              Junior Full Stack Developer with hands-on experience building web applications. Skilled in integrating APIs and creating applications having accessibility, interactivity and best practices in mind.
+          </p>
       </section>
       <Divider className="m-5 w-full" />
       <h2 style={{ fontFamily: "Geist Bold" }} className="text-3xl">Projects</h2>
