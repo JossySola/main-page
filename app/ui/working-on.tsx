@@ -11,10 +11,6 @@ export default function WorkingOn () {
               <Spinner classNames={{label: "text-foreground mt-4"}} variant="simple" />
               <p>21st Century Times <Code>v2.1.0</Code></p>
             </div>
-            <div className="flex flex-row gap-3 items-center">
-              <Spinner classNames={{label: "text-foreground mt-4"}} variant="simple" />
-              <p>Scheduler <Code>v2.0.0</Code></p>
-            </div>
             
             <h2 style={{ fontFamily: "Geist Bold" }} className="text-xl">Up next...</h2>
             
