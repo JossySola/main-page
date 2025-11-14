@@ -19,7 +19,7 @@ export default function Projects () {
             <div className="flex flex-col gap-3">
               <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide">
                 Scheduler
-                <Code>v2.0.6</Code>
+                <Code>v2.0.7</Code>
               </h3>
               <div className="flex flex-row gap-3 items-center">
                 <Link to="https://scheduler.jossysola.com/" className="text-primary" target="_blank">
