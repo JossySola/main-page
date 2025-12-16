@@ -10,7 +10,6 @@ export default function Gallery ({ blobs }: {
 }) {
     const [ currentPage, setCurrentPage ] = useState(1);
     const navigate = useNavigate();
-
     const metadata = [
         {
             caption: "Skull and Bear in clay",
@@ -57,7 +56,7 @@ export default function Gallery ({ blobs }: {
                     width={350}
                     src={ blobs[currentPage].url ?? "" }
                     />
-                    <CardFooter className="justify-center before:bg-white/10 h-fit border-white/20 border-1 overflow-hidden py-3 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%_-_8px)] shadow-small ml-1 z-10">
+                    <CardFooter className="justify-center before:bg-white/10 h-fit border-white/20 border-1 overflow-hidden py-3 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%-8px)] shadow-small ml-1 z-10">
                         <p className="text-tiny text-white/80">{ metadata[currentPage - 1].caption ?? "" }</p>
                     </CardFooter>
                 </Card> : 
@@ -68,7 +67,7 @@ export default function Gallery ({ blobs }: {
         <nav className="flex flex-row justify-center items-center gap-2">
             <Button 
             type="button"
-            className="!rounded-e-none flex flex-wrap truncate box-border items-center justify-center text-default-foreground data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[disabled=true]:text-default-300 data-[disabled=true]:pointer-events-none shadow-xs bg-default-100 [&[data-hover=true]:not([data-active=true])]:bg-default-200 active:bg-default-300 min-w-0 w-[40px] h-10 text-medium rounded-medium p-0 mr-[-40px] z-10"
+            className="rounded-e-none! flex flex-wrap truncate box-border items-center justify-center text-default-foreground data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[disabled=true]:text-default-300 data-[disabled=true]:pointer-events-none shadow-xs bg-default-100 [&[data-hover=true]:not([data-active=true])]:bg-default-200 active:bg-default-300 min-w-0 w-10 h-10 text-medium rounded-medium p-0 -mr-10 z-10"
             aria-label="previous"
             color="default" 
             size="lg" 
@@ -93,7 +92,6 @@ export default function Gallery ({ blobs }: {
             </Button>
 
             <Pagination 
-            isCompact
             color="primary" 
             classNames={{
                 wrapper: "pl-10 pr-10 bg-default-100"
@@ -106,7 +104,7 @@ export default function Gallery ({ blobs }: {
 
             <Button 
             type="button"
-            className="!rounded-s-none  truncate box-border items-center justify-center text-default-foreground data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[disabled=true]:text-default-300 data-[disabled=true]:pointer-events-none shadow-xs bg-default-100 [&[data-hover=true]:not([data-active=true])]:bg-default-200 active:bg-default-300 min-w-0 w-10 h-10 text-medium rounded-medium p-0 ml-[-40px] z-10"
+            className="rounded-s-none! truncate box-border items-center justify-center text-default-foreground data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[disabled=true]:text-default-300 data-[disabled=true]:pointer-events-none shadow-xs bg-default-100 [&[data-hover=true]:not([data-active=true])]:bg-default-200 active:bg-default-300 min-w-0 w-10 h-10 text-medium rounded-medium p-0 -ml-10 z-10"
             aria-label="next"
             color="default" 
             size="lg" 

@@ -1,5 +1,6 @@
 import Gallery from "~/ui/gallery";
 import type { Route } from "../+types/root";
+import { list } from "@vercel/blob";
 
 export type List = {
   blobs: {
@@ -27,17 +28,12 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export async function loader ({ params }: Route.LoaderArgs): Promise<Blobs | []> {
-  try {
-    const response = await fetch(`${process.env.VITE_PUBLIC_URL}/api/blob`, {
-      method: "GET",
-      headers: { 'Content-Type': 'application/json' }
+export async function loader ({ params }: Route.LoaderArgs) {
+    const response = await list({ 
+        mode: "folded",
+        prefix: "art/",
     });
-    const data: Blobs = await response.json();
-    return data;
-  } catch (e) {
-    return [];
-  }
+    return response.blobs ?? [];
 }
 
 export default function Art ({
