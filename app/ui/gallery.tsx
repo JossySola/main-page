@@ -1,4 +1,3 @@
-"use client"
 import { Button, Card, CardFooter, Image, Pagination } from "@heroui/react";
 import { useState } from "react";
 import { useNavigate } from "react-router";

@@ -40,7 +40,7 @@ export default function Portfolio () {
       </section>
       <Divider className="m-5 w-full" />
       <h2 style={{ fontFamily: "Geist Bold" }} className="text-3xl">Projects</h2>
-      <section className="w-full max-w-[1000px] m-5 flex flex-col justify-center items-center gap-5">
+      <section className="w-full max-w-250 m-5 flex flex-col justify-center items-center gap-5">
         <Projects />
       </section>
 

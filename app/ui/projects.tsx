@@ -26,8 +26,8 @@ export default function Projects () {
                   <External />
                 </Link>
                 <Link to="https://github.com/JossySola/scheduler" target="_blank">
-                  <img width={25} height={25} className="dark:relative h-[25px] object-contain" src="github-mark-white.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
-                  <img width={25} height={25} className="dark:hidden h-[25px] object-contain" src="github-mark.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
+                  <img width={25} height={25} className="dark:relative h-6.25 object-contain" src="github-mark-white.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
+                  <img width={25} height={25} className="dark:hidden h-6.25 object-contain" src="github-mark.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
                 </Link>
               </div>
               <p>This web application aims to provide a way to make schedules with the option of setting specifications for each row and column. With the specifications set, the user can utilize the AI feature to automatically complete the schedule based on the criteria.</p>
@@ -93,8 +93,8 @@ export default function Projects () {
                   <External />
                 </Link>
                 <Link to="https://github.com/JossySola/century" target="_blank">
-                  <img width={25} height={25} className="dark:relative h-[25px] object-contain" src="github-mark-white.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
-                  <img width={25} height={25} className="dark:hidden h-[25px] object-contain" src="github-mark.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
+                  <img width={25} height={25} className="dark:relative h-6.25 object-contain" src="github-mark-white.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
+                  <img width={25} height={25} className="dark:hidden h-6.25 object-contain" src="github-mark.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
                 </Link>
               </div>
               <p>This is part of the Codecademy Front-End project which uses the Reddit API. The user can search for specific Subreddits, choose a topic from the navigation menu, open, like, and comment any post by authenticating on Reddit.</p>
@@ -152,8 +152,8 @@ export default function Projects () {
                   <External />
                 </Link>
                 <Link to="https://github.com/JossySola/jammming" target="_blank">
-                  <img width={25} height={25} className="dark:relative h-[25px] object-contain" src="github-mark-white.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
-                  <img width={25} height={25} className="dark:hidden h-[25px] object-contain" src="github-mark.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
+                  <img width={25} height={25} className="dark:relative h-6.25 object-contain" src="github-mark-white.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
+                  <img width={25} height={25} className="dark:hidden h-6.25 object-contain" src="github-mark.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
                 </Link>
               </div>
               <p>This is part of the Codecademy Front-End project which uses Spotify API. The users are able to search for songs/artists, add songs to a new playlist and save it in their Spotify account.</p>
