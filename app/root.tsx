@@ -7,7 +7,7 @@ import {
   ScrollRestoration,
 } from "react-router";
 import type { Route } from "./+types/root";
-import "./app.css";
+import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
 import { ThemeProvider } from "./theme-provider";
 import { ThemeToggle } from "./theme-toggle";
