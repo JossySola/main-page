@@ -2,10 +2,10 @@ export function ArrowCircleLeft () {
     return (
         <svg 
         data-testid="geist-icon" 
-        height="32" 
+        height="64" 
         strokeLinejoin="round" 
         viewBox="0 0 16 16" 
-        width="32" 
+        width="64" 
         style={{ color: "currentcolor" }}>
             <path
             fillRule="evenodd" 
@@ -20,10 +20,10 @@ export function External () {
     return (
         <svg 
         data-testid="geist-icon" 
-        height="25" 
+        height="64" 
         strokeLinejoin="round" 
         viewBox="0 0 16 16" 
-        width="25" 
+        width="64"
         style={{ color: "currentcolor" }}>
             <path 
             fillRule="evenodd" 

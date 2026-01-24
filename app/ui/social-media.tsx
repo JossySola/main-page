@@ -4,7 +4,7 @@ export default function SocialMedia () {
     return (
       <section className="flex flex-row justify-center items-center gap-4">
         <Link to="https://github.com/JossySola" target="_blank">
-          <img width={32} height={32} className="dark:relative h-8 object-contain" src="github-mark-white.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
+          <img width={32} height={32} className="hidden dark:block h-8 object-contain" src="github-mark-white.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
           <img width={32} height={32} className="dark:hidden h-8 object-contain" src="github-mark.png" alt="GitHub" title="GitHub" aria-label="GitHub Profile" />
         </Link>
         <Link to="https://www.instagram.com/jossysolart/" target="_blank">

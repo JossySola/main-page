@@ -1,4 +1,4 @@
-import { Button, Card, CardFooter, Image, Pagination } from "@heroui/react";
+import { Button, Card } from "@heroui/react";
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { ArrowCircleLeft } from "./icons/vercel";
@@ -37,10 +37,11 @@ export default function Gallery ({ blobs }: {
     ]
     return <section className="w-full h-screen flex flex-col justify-center items-center gap-5 p-5">
         <header className="w-full flex flex-col md:flex-row justify-center items-center">
-            <Button 
-            isIconOnly 
-            aria-label="Go back button" 
-            variant="light"
+            <Button
+            isIconOnly
+            size="lg"
+            variant="tertiary"
+            aria-label="Back button"
             onPress={() => navigate(-1) }>
                 <ArrowCircleLeft />
             </Button>
@@ -49,15 +50,15 @@ export default function Gallery ({ blobs }: {
         
         {
             blobs && blobs[currentPage] ?
-                <Card isFooterBlurred className="border-none" radius="lg">
-                    <Image 
+                <Card>
+                    <img 
                     alt={ metadata[currentPage - 1].alt ?? "" }
                     width={350}
                     src={ blobs[currentPage].url ?? "" }
                     />
-                    <CardFooter className="justify-center before:bg-white/10 h-fit border-white/20 border-1 overflow-hidden py-3 absolute before:rounded-xl rounded-large bottom-1 w-[calc(100%-8px)] shadow-small ml-1 z-10">
+                    <Card.Footer className="justify-center before:bg-white/10 h-fit border-white/20 border overflow-hidden py-2 absolute rounded-large bottom-4 w-[calc(100%-8px)] shadow-small z-10 ">
                         <p className="text-tiny text-white/80">{ metadata[currentPage - 1].caption ?? "" }</p>
-                    </CardFooter>
+                    </Card.Footer>
                 </Card> : 
             <p className="text-2xl text-slate-400">Empty</p>
         }
@@ -65,12 +66,7 @@ export default function Gallery ({ blobs }: {
         
         <nav className="flex flex-row justify-center items-center gap-2">
             <Button 
-            type="button"
-            className="rounded-e-none! flex flex-wrap truncate box-border items-center justify-center text-default-foreground data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[disabled=true]:text-default-300 data-[disabled=true]:pointer-events-none shadow-xs bg-default-100 [&[data-hover=true]:not([data-active=true])]:bg-default-200 active:bg-default-300 min-w-0 w-10 h-10 text-medium rounded-medium p-0 -mr-10 z-10"
             aria-label="previous"
-            color="default" 
-            size="lg" 
-            variant="flat"
             onPress={ () => setCurrentPage(prev => (prev > 1 ? prev - 1 : prev)) }>
                 <svg 
                 aria-hidden="true" 
@@ -89,7 +85,8 @@ export default function Gallery ({ blobs }: {
                     </path>
                 </svg>
             </Button>
-
+{
+    /*
             <Pagination 
             color="primary" 
             classNames={{
@@ -100,14 +97,10 @@ export default function Gallery ({ blobs }: {
             total={ blobs && blobs.length - 1 }
             page={ currentPage } 
             onChange={ setCurrentPage } />
-
-            <Button 
-            type="button"
-            className="rounded-s-none! truncate box-border items-center justify-center text-default-foreground data-[focus-visible=true]:z-10 data-[focus-visible=true]:outline-2 data-[focus-visible=true]:outline-focus data-[focus-visible=true]:outline-offset-2 data-[disabled=true]:text-default-300 data-[disabled=true]:pointer-events-none shadow-xs bg-default-100 [&[data-hover=true]:not([data-active=true])]:bg-default-200 active:bg-default-300 min-w-0 w-10 h-10 text-medium rounded-medium p-0 -ml-10 z-10"
+    */
+}
+            <Button
             aria-label="next"
-            color="default" 
-            size="lg" 
-            variant="flat"
             onPress={ () => setCurrentPage((prev) => (prev < (blobs && blobs.length - 1) ? prev + 1 : prev))}>
                 <svg 
                 aria-hidden="true" 
