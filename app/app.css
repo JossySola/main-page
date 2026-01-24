@@ -1,7 +1,7 @@
 @import "tailwindcss";
-@plugin "../hero.ts";
-@source "../node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}";
-@custom-variant dark (&:is(.dark *));
+@import "@heroui/styles";
+@custom-variant dark (&:where(.dark, .dark *)&:where([data-theme="dark"], [data-theme="dark"] *));
+
 @font-face {
   font-family: 'Geist';
   src: url('./fonts/otf/Geist-Regular.otf') format('opentype'), url('./fonts/ttf/Geist-Regular.ttf') format('truetype');
@@ -21,23 +21,4 @@
 
 @theme {
   --font-sans: "Geist", Arial, Helvetica, sans-serif;
-}
-@layer base {
-  body {
-    background: #ffffff;
-    color: #2f2f2f;
-    @variant dark {
-      background: #1A1A1A;
-      color: #fafafa;
-    }
-  }
-  h1 {
-    font-size: 1.875rem;
-  }
-  h2 {
-    font-size: 1.5rem;
-  }
-  h3 {
-    font-size: 1.25rem;
-  }
 }
