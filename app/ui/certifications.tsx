@@ -1,11 +1,8 @@
 import { Card, Chip } from "@heroui/react";
-import { cardVariants } from "@heroui/styles";
 
 export default function Certifications () {
-  const slots = cardVariants();
-
   return (
-      <Card className={slots.base()}>
+      <Card>
           <h2 style={{ fontFamily: "Geist Bold" }} className="text-xl">Certifications</h2>
           <section className="flex flex-row gap-2 items-center mt-3">
             <Chip>2019</Chip>

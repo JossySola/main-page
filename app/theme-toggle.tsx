@@ -1,4 +1,3 @@
-"use client"
 import { Switch } from "@heroui/react";
 import { useEffect, useState } from "react";
 import Moon from "@gravity-ui/icons/Moon";
