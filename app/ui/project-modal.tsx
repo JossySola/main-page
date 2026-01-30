@@ -1,6 +1,4 @@
 import { Button, Card, Chip, Link, Modal } from "@heroui/react";
-import pkg from '@gravity-ui/icons';
-const {CircleFill} = pkg;
 import type { SanitizedType } from "~/lib/types";
 
 export default function ProjectModal({ blob }: { blob: SanitizedType }) {
@@ -15,7 +13,6 @@ export default function ProjectModal({ blob }: { blob: SanitizedType }) {
                         <Card.Title className="text-2xl flex flex-row gap-2">
                             {blob.data.name}
                             <Chip color="accent" variant="primary">
-                                <CircleFill width={6} />
                                 {blob.data.version}
                             </Chip>
                         </Card.Title>
