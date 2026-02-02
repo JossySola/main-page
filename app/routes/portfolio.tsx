@@ -5,7 +5,7 @@ import Certifications from "~/ui/certifications";
 import SoftSkills from "~/ui/soft-skills";
 import WorkingOn from "~/ui/working-on";
 import { BackButton } from "~/ui/back-button";
-import { list, } from "@vercel/blob";
+import { list } from "@vercel/blob";
 import type { SanitizedType } from "~/lib/types";
 import ProjectModal from "~/ui/project-modal";
 
@@ -57,7 +57,12 @@ export async function loader({}: Route.LoaderArgs) {
           return object;
         }
         if (blob.pathname.endsWith("data.json")) {
-          const request = await fetch(blob.downloadUrl);
+          const request = await fetch(blob.url);
+          if (!request.ok) {
+            return {
+
+            }
+          }
           const data = await request.json();
           object.data = data;
           return object;
