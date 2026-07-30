@@ -1,8 +1,11 @@
-import { Card, Chip } from "@heroui/react";
+import { Card, CardBody, Chip } from "@heroui/react";
 
 export default function SoftSkills () {
     return (
-        <Card>
+        <Card classNames={{
+          base: "w-full sm:min-w-[277px] sm:w-80 h-fit sm:h-fit bg-default-100 p-5"
+        }}>
+          <CardBody>
             <h2 style={{ fontFamily: "Geist Bold" }} className="text-xl">Soft Skills</h2>
             <div className="flex flex-row flex-wrap gap-3 mt-5">
               <Chip>💪🏽 Team work</Chip>
@@ -12,6 +15,7 @@ export default function SoftSkills () {
               <Chip>🗣️ Effective Communication</Chip>
               <Chip>🔎 Attention to Detail</Chip>
             </div>
+          </CardBody>
         </Card>
     )
 }

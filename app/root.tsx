@@ -7,10 +7,9 @@ import {
   ScrollRestoration,
 } from "react-router";
 import type { Route } from "./+types/root";
-import "./globals.css";
+import "./app.css";
+import ClientSideProvider from "./providers";
 import { Analytics } from "@vercel/analytics/react";
-import { ThemeProvider } from "./theme-provider";
-import { ThemeToggle } from "./theme-toggle";
 
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
@@ -27,21 +26,22 @@ export const links: Route.LinksFunction = () => [
 
 export function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <ThemeProvider>
+    <html lang="en" className="dark">
       <head>
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Meta />
         <Links />
       </head>
-      <body className="antialiased w-full h-full bg-background text-foreground">
-        <ThemeToggle />
-        { children }
-        <Analytics />
+      <body className="antialiased w-full h-full">
+        <ClientSideProvider>
+          { children }
+          <Analytics />
+        </ClientSideProvider>
         <ScrollRestoration />
         <Scripts />
       </body>
-    </ThemeProvider>
+    </html>
   );
 }
 
