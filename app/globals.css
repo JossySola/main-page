@@ -1,0 +1,24 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+@custom-variant dark (&:where(.dark, .dark *)&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@font-face {
+  font-family: 'Geist';
+  src: url('./fonts/otf/Geist-Regular.otf') format('opentype'), url('./fonts/ttf/Geist-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist Bold';
+  src: url('./fonts/otf/Geist-Bold.otf') format('opentype'), url('./fonts/ttf/Geist-Bold.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Geist ExtraBold';
+  src: url('./fonts/otf/Geist-ExtraBold.otf') format('opentype'), url('./fonts/ttf/Geist-ExtraBold.ttf') format('truetype');
+  font-style: normal;
+}
+
+@theme {
+  --font-sans: "Geist", Arial, Helvetica, sans-serif;
+}
