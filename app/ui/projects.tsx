@@ -36,31 +36,31 @@ export default function Projects () {
                   <Avatar size="md" src="nextjs.png" />
                 </Tooltip>
                 <Tooltip content="Vercel" showArrow={true}>
-                  <Avatar size="md" src="vercel.png" classNames={{
+                  <Avatar size="md" src="Vercel.svg" classNames={{
                     img: "object-scale-down p-1",
                     base: "object-scale-down p-1",
                   }} />
                 </Tooltip>
                 <Tooltip content="Tailwind CSS" showArrow={true}>
-                  <Avatar size="md" src="tailwindcss-mark.svg" classNames={{
+                  <Avatar size="md" src="Tailwind CSS.svg" classNames={{
                     img: "object-scale-down p-1",
                     base: "object-scale-down p-1",
                   }} />
                 </Tooltip>
                 <Tooltip content="Lottie" showArrow={true}>
-                  <Avatar size="md" src="lottie.svg" />
+                  <Avatar size="md" src="Lottie.svg" />
                 </Tooltip>
                 <Tooltip content="React" showArrow={true}>
-                  <Avatar size="md" src="react.svg" classNames={{
+                  <Avatar size="md" src="React.svg" classNames={{
                     img: "object-scale-down p-1",
                     base: "object-scale-down p-1",
                   }} />
                 </Tooltip>
                 <Tooltip content="TypeScript" showArrow={true}>
-                  <Avatar size="md" src="typescript.png" />
+                  <Avatar size="md" src="TypeScript.png" />
                 </Tooltip>
                 <Tooltip content="Framer" showArrow={true}>
-                  <Avatar size="md" src="framer.png" />
+                  <Avatar size="md" src="Framer.svg" />
                 </Tooltip>
                 <Tooltip content="Zod" showArrow={true}>
                   <Avatar size="md" src="https://raw.githubusercontent.com/colinhacks/zod/main/logo.svg" classNames={{
@@ -86,7 +86,7 @@ export default function Projects () {
             <div className="flex flex-col gap-3">
               <h3 style={{ fontFamily: "Geist Bold" }} className="text-2xl flex flex-row items-center gap-2 tracking-wide">
                 The 21st Century Times 
-                <Code>v2.0.0</Code>
+                <Code>v2.1.0</Code>
               </h3>
               <div className="flex flex-row items-center gap-3">
                 <Link to="https://www.centurytimes.jossysola.com/" className="text-primary" target="_blank">
@@ -100,32 +100,32 @@ export default function Projects () {
               <p>This is part of the Codecademy Front-End project which uses the Reddit API. The user can search for specific Subreddits, choose a topic from the navigation menu, open, like, and comment any post by authenticating on Reddit.</p>
               <AvatarGroup max={6}>
                 <Tooltip content="Vercel" showArrow={true}>
-                  <Avatar size="md" src="vercel.png" classNames={{
+                  <Avatar size="md" src="Vercel.svg" classNames={{
                     img: "object-scale-down p-1",
                     base: "object-scale-down p-1",
                   }} />
                 </Tooltip>
                 <Tooltip content="Vite" showArrow={true}>
-                  <Avatar size="md" src="vite.svg" classNames={{
+                  <Avatar size="md" src="Vite.svg" classNames={{
                     img: "object-scale-down pt-2 pb-2",
                   }} />
                 </Tooltip>
                 <Tooltip content="React Router" showArrow={true}>
-                  <Avatar size="md" src="rr_logo_dark.png" classNames={{
+                  <Avatar size="md" src="React Router.svg" classNames={{
                     img: "object-scale-down pr-2 pl-2"
                   }} />
                 </Tooltip>
                 <Tooltip content="React" showArrow={true}>
-                  <Avatar size="md" src="react.svg" classNames={{
+                  <Avatar size="md" src="React.svg" classNames={{
                     img: "object-scale-down p-1",
                     base: "object-scale-down p-1",
                   }} />
                 </Tooltip>
                 <Tooltip content="TypeScript" showArrow={true}>
-                  <Avatar size="md" src="typescript.png" />
+                  <Avatar size="md" src="TypeScript.svg" />
                 </Tooltip>
                 <Tooltip content="Postman" showArrow={true}>
-                  <Avatar size="md" src="postman.png" />
+                  <Avatar size="md" src="Postman.png" />
                 </Tooltip>
               </AvatarGroup>
             </div>
@@ -159,13 +159,13 @@ export default function Projects () {
               <p>This is part of the Codecademy Front-End project which uses Spotify API. The users are able to search for songs/artists, add songs to a new playlist and save it in their Spotify account.</p>
                 <AvatarGroup max={6}>
                   <Tooltip content="JavaScript Vanilla" showArrow={true}>
-                  <Avatar size="md" src="JavaScript-logo.png" classNames={{
+                  <Avatar size="md" src="JavaScript.svg" classNames={{
                     img: "object-scale-down",
                     base: "object-scale-down",
                   }} />
                 </Tooltip>
                   <Tooltip content="React" showArrow={true}>
-                    <Avatar size="md" src="react.svg" classNames={{
+                    <Avatar size="md" src="React.svg" classNames={{
                       img: "object-scale-down p-1",
                       base: "object-scale-down p-1",
                     }} />
