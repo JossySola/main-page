@@ -21,19 +21,18 @@ export default function Contact ({
       <Button 
       isIconOnly 
       aria-label="Go back button" 
-      variant="light"
       onPress={() => navigate(-1) }>
         <ArrowCircleLeft />
       </Button>
       <h1 style={{ fontFamily: "Geist Bold" }} className="text-center text-3xl m-5">Contact 💌</h1>
     </header>
     
-    <h2>Want to reach out?</h2>
+    <h2 className="text-2xl">Want to reach out?</h2>
       
     <h2 className="flex flex-row gap-2 items-center">Message me on 
       <Link to="https://www.linkedin.com/in/jossysola/" target="_blank">
         <img alt="LinkedIn" aria-label="LinkedIn link" src="linkedin.png" width={32} height={32} />
-      </Link>,
+      </Link>
     </h2> 
     <h2 className="flex flex-row gap-2 items-center">Check my projects on 
       <Link to="https://github.com/JossySola" target="_blank">
@@ -42,7 +41,6 @@ export default function Contact ({
       <Link to="https://github.com/JossySola" target="_blank">
         <img alt="GitHub" aria-label="GitHub link" src="github-mark.png" className="inline dark:hidden" width={32} height={32} />
       </Link>
-      ,
     </h2> 
     <h2 className="flex flex-row gap-2 items-center">or DM me on 
       <Link to="https://www.instagram.com/jossysolart/" target="_blank">
