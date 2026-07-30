@@ -11,6 +11,13 @@ export default function WorkingOn () {
               <Spinner classNames={{label: "text-foreground mt-4"}} variant="simple" />
               <p>Auditable medical platform</p>
             </div>
+            <div className="flex flex-row gap-3 items-center">
+              <Spinner classNames={{label: "text-foreground mt-4"}} variant="simple" />
+              <p className="inline-flex justify-center items-center">
+                <img alt="Scheduler logo" aria-label="Scheduler logo" src="scheduler-icon64.svg" className="inline mr-2 rounded-md" width={32}/>
+                Scheduler rebranding
+              </p>
+            </div>
             
             {/*<h2 style={{ fontFamily: "Geist Bold" }} className="text-xl">Up next...</h2>
             
